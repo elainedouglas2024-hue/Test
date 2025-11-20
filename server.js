@@ -179,7 +179,7 @@ app.get("/ref/:code", async (req, res) => {
       referrals: u.referrals,
       earnings_usdt: u.earnings_usdt,
       level: u.level,
-      link: `${process.env.FRONTEND_DOMAIN || "https://yourdomain.com"}/?ref=${u.referral_code}`
+      link: `${process.env.FRONTEND_DOMAIN || "https://referral-test-2opa.onrender.com"}/?ref=${u.referral_code}`
     });
   } catch (err) {
     console.error("Ref lookup error:", err);
